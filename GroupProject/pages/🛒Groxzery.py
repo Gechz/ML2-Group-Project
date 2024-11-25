@@ -99,7 +99,7 @@ col1, col2 = st.columns([3, 1])
 with col1:
     st.title("Grozxery - Smart Chat, Smart Order")
 with col2:
-    st.image('GroupProject/pages/path_to_groxzery.png', use_column_width=True)
+    st.image('GroupProject/pages/path_to_groxzery.png', use_container_width=True)
 user_id = "streamlit_user"
 
 # Gather user preferences at the start
@@ -110,7 +110,7 @@ uploaded_file = st.file_uploader("Upload a picture of your kitchen, pantry, or f
 image = None
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
-    st.image(image, caption="Uploaded Image.", use_column_width=True)
+    st.image(image, caption="Uploaded Image.", use_container_width=True)
     fridge_description = st.text_input("Please describe the contents of your uploaded image (e.g., items visible in the fridge, pantry, or kitchen):")
     if not fridge_description:
         st.warning("You must provide a description of the uploaded image before proceeding.")
