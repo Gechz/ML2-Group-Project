@@ -18,17 +18,17 @@ st.markdown(
 
 st.header("Grozxery")
 st.subheader("Smart Chat. Smart Order")
-st.image("pages/path_to_groxzery.png")
+st.image("GroupProject/pages/path_to_groxzery.png")
  # Team Members Section
 st.header("Project Team")
     
     # Define team members with specific images and roles
 team_data = [
-        {"name": "Vitus Schlereth", "role": "Data Engineering Expert", "image": "pages/path_to_vitus.jpg"},
-        {"name": "Alina Edigareva", "role": "Data Analytics Expert", "image": "pages/path_to_alina.jpg"},
-        {"name": "Yannish Bhandari", "role": "Chief Tech Consultant", "image": "pages/path_to_yannish.jpg"},
-        {"name": "Susana Luna", "role": "Data Scientist Expert", "image": "pages/path_to_susana.jpg"},
-        {"name": "Gabriel Chapman", "role": "Data Scientist Expert", "image": "pages/path_to_gabriel.jpg"}
+        {"name": "Vitus Schlereth", "role": "Data Engineering Expert", "image": "GroupProject/pages/path_to_vitus.jpg"},
+        {"name": "Alina Edigareva", "role": "Data Analytics Expert", "image": "GroupProject/pages/path_to_alina.jpg"},
+        {"name": "Yannish Bhandari", "role": "Chief Tech Consultant", "image": "GroupProject/pages/path_to_yannish.jpg"},
+        {"name": "Susana Luna", "role": "Data Scientist Expert", "image": "GroupProject/pages/path_to_susana.jpg"},
+        {"name": "Gabriel Chapman", "role": "Data Scientist Expert", "image": "GroupProject/pages/path_to_gabriel.jpg"}
     ]
     
     # Display each team member in a larger format
@@ -44,5 +44,5 @@ for member in team_data:
 # Pages in the side
 pages = [
     ("Cover Page", "Main"),
-    ("Groxzery Chatbot", "🛒Groxzery"),
+    ("Groxzery Chatbot", "🛒Grozxery"),
 ]
