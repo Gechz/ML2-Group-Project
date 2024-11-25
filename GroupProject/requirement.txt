@@ -1,0 +1,6 @@
+streamlit 
+google.generativeai
+defaultdict
+fpdf
+io  # Import io for in-memory buffer
+PIL   # Import PIL for image handling
