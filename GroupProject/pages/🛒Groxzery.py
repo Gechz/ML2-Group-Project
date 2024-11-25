@@ -14,7 +14,7 @@ def set_api_key(api_key):
     genai.configure(api_key=api_key)
 
 # Set your API key (replace 'YOUR_API_KEY' with your actual Google API key)
-set_api_key("AIzaSyD7AgjZ2I3sRbBZD1iVpkZJHF8aDe6feNY")
+set_api_key("-")
 
 # In-memory cache for storing user session data
 session_data = defaultdict(dict)
