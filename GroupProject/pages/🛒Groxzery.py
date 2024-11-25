@@ -99,7 +99,7 @@ col1, col2 = st.columns([3, 1])
 with col1:
     st.title("Grozxery - Smart Chat, Smart Order")
 with col2:
-    st.image('pages/path_to_groxzery.png', use_column_width=True)
+    st.image('GroupProject/pages/path_to_groxzery.png', use_column_width=True)
 user_id = "streamlit_user"
 
 # Gather user preferences at the start
