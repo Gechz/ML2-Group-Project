@@ -1,19 +1,19 @@
 import streamlit as st
 import google.generativeai as genai
-import os
 from collections import defaultdict
 from fpdf import FPDF
 import io  # Import io for in-memory buffer
 from PIL import Image  # Import PIL for image handling
 
-# Set up the API key
-def set_api_key(api_key):
-    os.environ["GOOGLE_API_KEY"] = api_key
-    genai.configure(api_key=api_key)
+# Set up the API key using Streamlit secrets
+def set_api_key():
+    api_key = st.secrets["GOOGLE_API_KEY"]  # Access from Streamlit Secrets
+    if api_key:
+        genai.configure(api_key=api_key)
+    else:
+        raise ValueError("API key not found in Streamlit secrets.")
 
-# Set your API key (replace 'YOUR_API_KEY' with your actual Google API key)
-set_api_key("AIzaSyD7AgjZ2I3sRbBZD1iVpkZJHF8aDe6feNY")
-
+set_api_key()
 # In-memory cache for storing user session data
 session_data = defaultdict(dict)
 
