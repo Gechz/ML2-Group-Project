@@ -1,5 +1,5 @@
 import streamlit as st
-import google.generativeai as genai
+import google-generativeai as genai
 from collections import defaultdict
 from fpdf import FPDF
 import io  # Import io for in-memory buffer
