@@ -95,6 +95,7 @@ def chat_with_model(user_id, user_message, fridge_image, fridge_description):
                             f"Include a brief note on the nutritional benefits of certain key items, like high-fiber oats or protein-rich beans, to educate the user. "
                             f"If the user has young children, recommend kid-friendly and nutritious snacks as part of the grocery list. "
                             f"Consider seasonal produce in your recommendations to ensure freshness, better pricing, and better flavor. "
+                            f"If the user talks about an event, like Thanksgiving and BBQ, ignore the 2.5 weeks of supply and focus solely for events."
                             f"Avoid using characters such as - or / in the response, as these can disrupt the PDF generation function that uses latin1 encoding. "
                             f"{user_message}")
 
