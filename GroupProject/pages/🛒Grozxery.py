@@ -107,7 +107,7 @@ def chat_with_model(user_id, user_message, fridge_image, fridge_description):
 
     try:
         with st.spinner('Generating your personalized grocery list, please wait...'):
-            response = chat.send_message(personalized_message, temperature = 0.6)
+            response = chat.send_message(personalized_message)
         if response:
             final_response = (f"Thank you for the information, {user_preferences['name']}. Based on your input, I have prepared a grocery list for a household of {user_preferences['household_size']} people:\n"
                               f"{response.text}")
