@@ -20,9 +20,15 @@ st.markdown(
 st.markdown("<h1 style='text-align: center;'>Grozxery</h1>", unsafe_allow_html=True)
 st.markdown("<h2 style='text-align: center;'>Smart Chat. Smart Order</h2>", unsafe_allow_html=True)
 
-# Centered Image
-st.markdown("<div style='text-align: center;'><img src='GroupProject/pages/path_to_groxzery.png' width='100%'></div>", unsafe_allow_html=True)
-
+# Centered Image with Larger Size
+st.markdown(
+    """
+    <div style="text-align: center;">
+        <img src="GroupProject/pages/path_to_groxzery.png" alt="Grozxery Logo" style="width:60%; max-width:400px;">
+    </div>
+    """, 
+    unsafe_allow_html=True
+)
 
 st.markdown("-"*50)
 # Team Members Section (Centered)
