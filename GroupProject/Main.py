@@ -17,8 +17,8 @@ st.markdown(
 )
 
 # Header and Subheader (Centered)
-st.markdown("<h1 style='text-align: center;'>Grozxery</h1>", unsafe_allow_html=True)
-st.markdown("<h2 style='text-align: center;'>Smart Chat. Smart Order</h2>", unsafe_allow_html=True)
+st.markdown("Grozxery")
+st.markdown("Smart Chat. Smart Order")
 
 # Centered Image with use_column_width
 st.image("GroupProject/pages/path_to_groxzery.png", width=500)
