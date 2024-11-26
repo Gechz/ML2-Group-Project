@@ -97,6 +97,7 @@ def chat_with_model(user_id, user_message, fridge_image, fridge_description):
                             f"Consider seasonal produce in your recommendations to ensure freshness, better pricing, and better flavor. "
                             f"If the user talks about an event, like Thanksgiving and BBQ, ignore the 2.5 weeks of supply and focus solely for events."
                             f"Avoid using characters such as - or / in the response, as these can disrupt the PDF generation function that uses latin1 encoding. "
+                            f"Find alternative for - and / and words with specific annotations (maybe keep this regular) to prevent PDF disruption."
                             f"{user_message}")
 
     if fridge_description:
