@@ -17,8 +17,8 @@ st.markdown(
 )
 
 # Header and Subheader (Centered)
-st.markdown("Grozxery")
-st.markdown("Smart Chat. Smart Order")
+st.title("Grozxery")
+st.header("Smart Chat. Smart Order")
 
 # Centered Image with use_column_width
 st.image("GroupProject/pages/path_to_groxzery.png", width=500)
