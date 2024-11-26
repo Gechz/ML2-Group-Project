@@ -61,6 +61,7 @@ def chat_with_model(user_id, user_message, fridge_image, fridge_description):
     
     personalized_message = (f"User name: {user_preferences['name']}, Household size: {user_preferences['household_size']}, "
                             f"Dietary needs: {user_preferences['dietary_needs']} "
+                            f"Your first check will need to be within your own history of the chat to validate if the user is updating information from a previous prompt"
                             f"Generate a list of basic nutritious grocery items and household cleaning supplies. "
                             f"The user is looking for as much detail as possible. Unless specified, calculates units of each product assuming grocery will last for 2 and a half weeks. "
                             f"Be ready to answer in the language in which the user requests to be answered in. "
