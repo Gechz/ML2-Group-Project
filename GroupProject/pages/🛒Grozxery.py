@@ -23,7 +23,7 @@ def gather_user_preferences(user_id):
         name = st.text_input("Can you please share your name?", "John Doe")
         session_data[user_id]['name'] = name
     if 'household_size' not in session_data[user_id]:
-        household_size = st.number_input("Enter your household size (default is 1):", min_value=1, max_value=20, step=1, value=1)
+        household_size = st.number_input("Enter your household size:", min_value=1, max_value=20, step=1, value=1)
         dietary_options = ["None", "Vegan", "Gluten-Free", "Vegetarian","Regular Diet", "Other"]
         dietary_choice = st.selectbox("Select your dietary needs or preferences:", dietary_options)
         if dietary_choice == "Other":
