@@ -9,7 +9,6 @@ st.markdown(
     """
     <div style="text-align: center;">
         <h1>Machine Learning 2 Final Project - Group 4 </h1>
-        <h1>taste.ai</h1>
         <h3>November 27, 2024</h3>
     </div>
     """,
