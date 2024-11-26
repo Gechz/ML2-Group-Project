@@ -23,6 +23,8 @@ st.markdown("<h2 style='text-align: center;'>Smart Chat. Smart Order</h2>", unsa
 # Centered Image
 st.markdown("<div style='text-align: center;'><img src='GroupProject/pages/path_to_groxzery.png' width='50%'></div>", unsafe_allow_html=True)
 
+
+st.markdown("-"*50)
 # Team Members Section (Centered)
 st.markdown("<h2 style='text-align: center;'>Project Team</h2>", unsafe_allow_html=True)
 
