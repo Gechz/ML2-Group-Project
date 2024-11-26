@@ -148,7 +148,7 @@ st.write("### Chat with Grozxery")
 user_message = st.text_input("Please give details of your order:")
 
 # Store response in session state
-submit = st.button("Lets get your order ready!")
+submit = st.button("Lets get your grocery list ready!")
 if submit and user_message:
     response = chat_with_model(user_id, user_message, image, fridge_description)
     st.session_state['response'] = response  # Store response in session state
