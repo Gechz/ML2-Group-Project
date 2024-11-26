@@ -1,11 +1,11 @@
-# Grozxery - Smart Chat, Smart Order
+# taste.ai - Smart Chat, Smart Order
 
-Welcome to **Grozxery**! This application is designed to be your personalized grocery assistant, powered by Google Generative AI and Streamlit. Whether you need a nutritious grocery list, suggestions for household cleaning supplies, or even a simple recipe, Grozxery has you covered.
+Welcome to **taste.ai**! This application is designed to be your personalized grocery assistant, powered by Google Generative AI and Streamlit. Whether you need a nutritious grocery list, suggestions for household cleaning supplies, or even a simple recipe, taste.ai has you covered.
 
 ## Features
 - **Smart Grocery Suggestions**: Enter your dietary preferences, household size, and other details to receive a personalized grocery list.
 - **Image Recognition for Fridge Contents with User Description**: Upload a picture of your fridge, pantry, or kitchen, and the app will consider what's already available and suggest complementary items.
-- **Integrated Recipe Recommendations**: When food items are included in your order, Grozxery will also provide a simple and nutritious recipe to make the most of your groceries.
+- **Integrated Recipe Recommendations**: When food items are included in your order, taste.ai will also provide a simple and nutritious recipe to make the most of your groceries.
 - **Customizable Needs**: Specify whether you want only grocery items, household cleaning supplies, or both.
 - **Downloadable PDF**: Get your personalized grocery list in a downloadable PDF format.
 
@@ -68,5 +68,5 @@ GOOGLE_API_KEY = "your_actual_api_key_here"
 - **Google Generative AI** for providing the basis for smart suggestions and chat functionality.
 - **Streamlit** for enabling rapid prototyping and easy deployment.
 
-Enjoy using Grozxery - Your Smart Chat, Smart Order Assistant! 🍏🥕🥖
+Enjoy using taste.aie - Your Smart Chat, Smart Order Assistant! 🍏🥕🥖
 
