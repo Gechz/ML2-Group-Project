@@ -5,6 +5,11 @@ from fpdf import FPDF
 import io  # Import io for in-memory buffer
 from PIL import Image  # Import PIL for image handling
 
+st.subheader("Guidelines:")
+st.markdown("Hello dear user, welcome to taste.ai")
+st.markdown("Please, insert your name, how many live in your household, dietary needs or preferences (if any), and tell taste.ai what are you looking for in your order! Based on your favorite cuisine type or style of cooking, taste.ai will provide a list of grocery items you will need that by default should last for 2 and a half weeks. If you wish to upload an image, please, put a description to ensure proper understanding of what the image contains. At the end, you can download the final list of your liking and take it to the grocery for a stress-less experience!")
+st.markdown("-"*50)
+
 # Set up the API key using Streamlit secrets
 def set_api_key():
     api_key = st.secrets["GOOGLE_API_KEY"]  # Access from Streamlit Secrets
