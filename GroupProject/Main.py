@@ -21,7 +21,7 @@ st.markdown("<h1 style='text-align: center;'>Grozxery</h1>", unsafe_allow_html=T
 st.markdown("<h2 style='text-align: center;'>Smart Chat. Smart Order</h2>", unsafe_allow_html=True)
 
 # Centered Image with use_column_width
-st.image("GroupProject/pages/path_to_groxzery.png", use_container_width=True)
+st.image("GroupProject/pages/path_to_groxzery.png", width=500)
 
 st.markdown("-"*50)
 # Team Members Section (Centered)
