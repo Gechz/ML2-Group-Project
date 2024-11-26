@@ -106,7 +106,7 @@ def chat_with_model(user_id, user_message, fridge_image, fridge_description):
             personalized_message += " No image of the fridge was uploaded."
 
     try:
-        with st.spinner('Generating your personalized grocery list, please wait...'):
+        with st.spinner('🍎 Preparing your personalized grocery list... slicing apples, boiling pasta, and checking the pantry! 🥦 Please wait...'):
             response = chat.send_message(personalized_message)
         if response:
             final_response = (f"Thank you for the information, {user_preferences['name']}. Based on your input, I have prepared a grocery list for a household of {user_preferences['household_size']} people:\n"
