@@ -16,22 +16,26 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.header("Grozxery")
-st.subheader("Smart Chat. Smart Order")
-st.image("GroupProject/pages/path_to_groxzery.png")
- # Team Members Section
-st.header("Project Team")
-    
-    # Define team members with specific images and roles
+# Header and Subheader (Centered)
+st.markdown("<h1 style='text-align: center;'>Grozxery</h1>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center;'>Smart Chat. Smart Order</h2>", unsafe_allow_html=True)
+
+# Centered Image
+st.markdown("<div style='text-align: center;'><img src='GroupProject/pages/path_to_groxzery.png' width='50%'></div>", unsafe_allow_html=True)
+
+# Team Members Section (Centered)
+st.markdown("<h2 style='text-align: center;'>Project Team</h2>", unsafe_allow_html=True)
+
+# Define team members with specific images and roles
 team_data = [
-        {"name": "Vitus Schlereth", "role": "Data Engineering Expert", "image": "GroupProject/pages/path_to_vitus.jpg"},
-        {"name": "Alina Edigareva", "role": "Data Analytics Expert", "image": "GroupProject/pages/path_to_alina.jpg"},
-        {"name": "Yannish Bhandari", "role": "Chief Tech Consultant", "image": "GroupProject/pages/path_to_yannish.jpg"},
-        {"name": "Susana Luna", "role": "Data Scientist Expert", "image": "GroupProject/pages/path_to_susana.jpg"},
-        {"name": "Gabriel Chapman", "role": "Data Scientist Expert", "image": "GroupProject/pages/path_to_gabriel.jpg"}
-    ]
-    
-    # Display each team member in a larger format
+    {"name": "Vitus Schlereth", "role": "Data Engineering Expert", "image": "GroupProject/pages/path_to_vitus.jpg"},
+    {"name": "Alina Edigareva", "role": "Data Analytics Expert", "image": "GroupProject/pages/path_to_alina.jpg"},
+    {"name": "Yannish Bhandari", "role": "Chief Tech Consultant", "image": "GroupProject/pages/path_to_yannish.jpg"},
+    {"name": "Susana Luna", "role": "Data Scientist Expert", "image": "GroupProject/pages/path_to_susana.jpg"},
+    {"name": "Gabriel Chapman", "role": "Data Scientist Expert", "image": "GroupProject/pages/path_to_gabriel.jpg"}
+]
+
+# Display each team member in a larger format
 for member in team_data:
     col1, col2 = st.columns([1, 2])  # Adjust column ratio to make images larger
     with col1:
@@ -39,8 +43,6 @@ for member in team_data:
     with col2:
         st.subheader(member["name"])
         st.write(member["role"])
-
-
 # Pages in the side
 pages = [
     ("Cover Page", "Main"),
