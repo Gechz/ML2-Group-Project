@@ -9,7 +9,7 @@ st.markdown(
     """
     <div style="text-align: center;">
         <h1>Machine Learning 2 Final Project - Group 4 </h1>
-        <h1>Grozxery</h1>
+        <h1>taste.ai</h1>
         <h3>November 27, 2024</h3>
     </div>
     """,
@@ -17,11 +17,11 @@ st.markdown(
 )
 
 # Header and Subheader (Centered)
-st.title("Grozxery")
+st.title("taste.ai")
 st.header("Smart Chat. Smart Order")
 
 # Centered Image with use_column_width
-st.image("GroupProject/pages/path_to_groxzery.png", width=500)
+st.image("GroupProject/pages/Picture1.png", width=500)
 
 st.markdown("-"*50)
 # Team Members Section (Centered)
