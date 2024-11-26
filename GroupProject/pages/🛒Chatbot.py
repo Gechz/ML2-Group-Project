@@ -123,7 +123,7 @@ def chat_with_model(user_id, user_message, fridge_image, fridge_description):
 # Streamlit app
 col1, col2 = st.columns([3, 1])
 with col1:
-    st.title("Grozxery - Smart Chat, Smart Order")
+    st.title("taste.ai - Smart Chat, Smart Order")
 with col2:
     st.image('GroupProject/pages/Picture1.png', use_container_width=True)
 user_id = "streamlit_user"
@@ -145,7 +145,7 @@ else:
     fridge_description = ""
 
 # Chat interface
-st.write("### Chat with Grozxery")
+st.write("### Chat with taste.ai")
 user_message = st.text_input("Please give details of your order:")
 
 # Store response in session state
