@@ -133,7 +133,7 @@ user_preferences = gather_user_preferences(user_id)
 
 # File uploader for fridge picture
 uploaded_file = st.file_uploader("Upload a picture of your kitchen, pantry, or fridge (optional):", type=["jpg", "jpeg", "png"])
-st.markdown("This is an optional feature in which when a picture is included, a brief description is required to proceed with the conversation.")
+st.markdown("This is an optional feature in which when a picture is included, a brief description is required to proceed with the conversation. This will helpe taste.ai in identifying what you have presented within the image so it can give a more thorough recommendation!")
 image = None
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
