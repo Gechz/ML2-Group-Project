@@ -73,7 +73,7 @@ def chat_with_model(user_id, user_message, fridge_image, fridge_description):
                             f"Consider that at the end of the response there is a download as PDF option, and if it detects a character outside of its range (latin-1), it will be an error. "
                             f"If you are forced in using objects such as / to present 1/2 lbs, use instead 0.5, so there are no issues. Consider this a temperature value of 0.5 for this type of instruction!. "
                             f"Look at the image uploaded and consider that if you find a product in the image, either discount it from your estimation or do not recommend it at all. "
-                            f"I want the first message to be a brief description of the image received. If there is no image uploaded, just say that there was no image uploaded. "
+                            f"I want the first message to be a brief description of the image received. If there is no image uploaded, just say that there was no picture uploaded. "
                             f"If the user specifies that they are only interested in house cleaning supplies, focus exclusively on that and do not include food items. "
                             f"If the user indicates that they want only food items, focus on providing the most nutritious and essential grocery options, excluding any non-food items like house cleaning supplies. "
                             f"If there are any food items in the list, please add a simple and nutritious recipe at the end of the response that uses the provided ingredients. "
