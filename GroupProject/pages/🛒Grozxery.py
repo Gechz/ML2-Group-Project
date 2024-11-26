@@ -20,7 +20,7 @@ session_data = defaultdict(dict)
 # Define a function to gather user preferences
 def gather_user_preferences(user_id):
     if 'name' not in session_data[user_id]:
-        name = st.text_input("Can you please share your name?", "Guest")
+        name = st.text_input("Can you please share your name?", "John Doe")
         session_data[user_id]['name'] = name
     if 'household_size' not in session_data[user_id]:
         household_size = st.number_input("Enter your household size (default is 1):", min_value=1, max_value=20, step=1, value=1)
@@ -130,6 +130,7 @@ user_preferences = gather_user_preferences(user_id)
 
 # File uploader for fridge picture
 uploaded_file = st.file_uploader("Upload a picture of your kitchen, pantry, or fridge (optional):", type=["jpg", "jpeg", "png"])
+st.markdown("This is an optional feature in which when a picture is included, a brief description is required to proceed with the conversation.")
 image = None
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
@@ -145,7 +146,7 @@ st.write("### Chat with Grozxery")
 user_message = st.text_input("Please give details of your order:")
 
 # Store response in session state
-submit = st.button("Get your order!")
+submit = st.button("Lets get your order ready!")
 if submit and user_message:
     response = chat_with_model(user_id, user_message, image, fridge_description)
     st.session_state['response'] = response  # Store response in session state
