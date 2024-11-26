@@ -1,11 +1,12 @@
 import streamlit as st
 import importlib.util
 
-
-st.write(st.get_option("theme.primaryColor"))
 # Set up the app layout and default page configuration
 st.set_page_config(page_title="Machine Learning 2 Final Project", layout="wide")
 
+
+
+st.write(st.get_option("theme.primaryColor"))
 # Display the main page content with a centered title and delivery date
 st.markdown(
     """
