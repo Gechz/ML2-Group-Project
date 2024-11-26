@@ -73,6 +73,29 @@ def chat_with_model(user_id, user_message, fridge_image, fridge_description):
                             f"If you are forced in using objects such as / to present 1/2 lbs, use instead 0.5, so there are no issues. Consider this a temperature value of 0.5 for this type of instruction!. "
                             f"Look at the image uploaded and consider that if you find a product in the image, either discount it from your estimation or do not recommend it at all. "
                             f"I want the first message to be a brief description of the image received. If there is no image uploaded, just say that there was no image uploaded. "
+                            f"If the user specifies that they are only interested in house cleaning supplies, focus exclusively on that and do not include food items. "
+                            f"If the user indicates that they want only food items, focus on providing the most nutritious and essential grocery options, excluding any non-food items like house cleaning supplies. "
+                            f"If there are any food items in the list, please add a simple and nutritious recipe at the end of the response that uses the provided ingredients. "
+                            f"Ensure the recipe is easy to follow and requires minimal ingredients, focusing on health and simplicity. "
+                            f"If the user requests only a recipe, generate a nutritious meal idea using basic ingredients from the grocery list. "
+                            f"The recipe should be suitable for the household size specified by the user. Scale the quantities appropriately. "
+                            f"If the user specifies dietary preferences such as vegetarian or gluten-free, ensure that both the grocery list and the recipe adhere to these requirements. "
+                            f"Always consider the nutritional value of each item, aiming for a balanced diet that covers essential food groups like proteins, carbohydrates, and vitamins. "
+                            f"Incorporate pantry staples like spices or cooking oil into the recipe where appropriate, assuming the user may already have these. "
+                            f"If the user indicates any preferences for brand names, include those specific brands where applicable. "
+                            f"The grocery list should be organized by categories such as dairy, vegetables, grains, and household supplies to improve clarity. "
+                            f"If the user mentions any allergies, strictly avoid suggesting those ingredients. Provide suitable alternatives wherever possible. "
+                            f"If the user is on a budget, try to suggest cost-effective but nutritious options to maximize value. "
+                            f"In case the user specifies luxury or gourmet preferences, include premium brands and specialty items in the suggestion. "
+                            f"If there are products already in the fridge image, focus on complementary items that will help the user make complete meals. "
+                            f"When creating the grocery list, prioritize fresh ingredients and reduce highly processed foods for better health benefits. "
+                            f"For dietary needs like keto or low-carb, adjust the grocery list to include high-protein and low-carb vegetables, while avoiding sugars and grains. "
+                            f"Suggest bulk quantities where it makes sense, especially for non-perishable items, to help the user save money. "
+                            f"If the user is interested in reducing waste, suggest products that have longer shelf lives or multi-purpose uses. "
+                            f"Include a brief note on the nutritional benefits of certain key items, like high-fiber oats or protein-rich beans, to educate the user. "
+                            f"If the user has young children, recommend kid-friendly and nutritious snacks as part of the grocery list. "
+                            f"Consider seasonal produce in your recommendations to ensure freshness, better pricing, and better flavor. "
+                            f"Avoid using characters such as - or / in the response, as these can disrupt the PDF generation function that uses latin1 encoding. "
                             f"{user_message}")
 
     if fridge_description:
@@ -84,7 +107,7 @@ def chat_with_model(user_id, user_message, fridge_image, fridge_description):
 
     try:
         with st.spinner('Generating your personalized grocery list, please wait...'):
-            response = chat.send_message(personalized_message)
+            response = chat.send_message(personalized_message, temperature = 0.6)
         if response:
             final_response = (f"Thank you for the information, {user_preferences['name']}. Based on your input, I have prepared a grocery list for a household of {user_preferences['household_size']} people:\n"
                               f"{response.text}")
