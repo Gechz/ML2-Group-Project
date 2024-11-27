@@ -68,7 +68,6 @@ def chat_with_model(user_id, user_message, fridge_image, fridge_description):
                             f"Dietary needs: {user_preferences['dietary_needs']} "
                             f"Your first check will need to be within your own history of the chat to validate if the user is updating information from a previous prompt"
                             f"When checking the history of the chat, validate again the dietary needs. Maybe the user updated it and you need to take it into account"
-                            f"
                             f"Generate a list of basic nutritious grocery items and household cleaning supplies. "
                             f"The user is looking for as much detail as possible. Unless specified, calculates units of each product assuming grocery will last for 2 and a half weeks. "
                             f"Be ready to answer in the language in which the user requests to be answered in. "
